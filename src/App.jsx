@@ -34,8 +34,9 @@ export default function App() {
         <div id="contact" className="p-1 m-1">
           <h2 className="py-3 text-xl">Contact Info</h2>
           <div className="text-sm border border-gray-500 rounded-md p-4">
-            <p> Phone: (478) 867-5309 </p>
-            <p> Email: foo@bar.com</p>
+            <p> Phone: <a href='tel:+14788675309' className='text-blue-400'>(478) 867-5309 </a></p>
+            <p> Email: <a href='mailto:foo@bar.com' className='text-blue-400'>foo@bar.com</a></p>
+            <p>Github: <a href='www.github.com/adamhartman5' className='text-blue-400'>Link</a></p>
           </div>
         </div>
         <div id="work" className="p-1 m-1">
