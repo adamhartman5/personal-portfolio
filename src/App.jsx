@@ -4,13 +4,13 @@ export default function App() {
       id: 1,
       name: "Personal Portfolio",
       description:
-        "This website built on React with Tailwind CSS using responsive design",
+        "This website built on React with Tailwind CSS using responsive design. The page has a introduction to me with my contact info and descriptions of each project. All sections are properly defined and properly spaced",
     },
     {
       id: 2,
       name: "Commmunity Event Page",
       description:
-        "A page showing community events built with React, Typescript, and Tailwind CSS using responsive design and strictly typed code",
+        "A page showing community events built with React, Typescript, and Tailwind CSS using responsive design and strictly typed code. The event page is well designed with all pertinent information.",
     },
   ]
   return (
