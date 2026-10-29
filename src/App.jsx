@@ -1,20 +1,54 @@
 export default function App() {
+  const projects = [
+    {
+      id: 1,
+      name: "Personal Portfolio",
+      description:
+        "This website built on React with Tailwind CSS using responsive design",
+    },
+    {
+      id: 2,
+      name: "Commmunity Event Page",
+      description:
+        "A page showing community events built with React, Typescript, and Tailwind CSS using responsive design and strictly typed code",
+    },
+  ]
   return (
     <main className="min-h-screen p-2">
-      <nav className='flex flex-row flex-wrap'>
-        <a href='#contact' className='m-2'>Contact</a>
-        <a href='#work' className='m-2'>Work</a>
+      <nav className="flex flex-row flex-wrap">
+        <a href="#contact" className="m-2">
+          Contact
+        </a>
+        <a href="#work" className="m-2">
+          Work
+        </a>
       </nav>
       <section>
-        <div className='p-1 m-1 py-3'>
-          <h1 className='py-2 text-xl'>Adam Hartman</h1>
-          <p className='py-2 text-sm max-w-200'>I am a junior developer with knowledge in HTML, CSS, JavaScript and React. I am focused on building full stack apps along with SPAs.</p>
+        <div className="p-1 m-1 py-3">
+          <h1 className="py-2 text-2xl">Adam Hartman</h1>
+          <p className="py-2 text-sm max-w-200">
+            I am a junior developer with knowledge in HTML, CSS, JavaScript and
+            React. I am focused on building full stack apps along with SPAs.
+          </p>
         </div>
-        <div id='contact'>
-          <h2 className='p-1 py-3 m-1'>Contact Info</h2>
+        <div id="contact" className="p-1 m-1">
+          <h2 className="py-3 text-xl">Contact Info</h2>
+          <div className="text-sm border border-gray-500 rounded-md p-4">
+            <p> Phone: (478) 867-5309 </p>
+            <p> Email: foo@bar.com</p>
+          </div>
         </div>
-        <div id='work'>
-          <h2 className='p-1 py-3 m-1'>Work</h2>
+        <div id="work" className="p-1 m-1">
+          <h2 className="mt-2 text-xl">Work</h2>
+          {projects.map((project) => (
+            <article
+              key={project.id}
+              className="my-3 border border-gray-500 rounded-md p-4"
+            >
+              <h3 className="py-2 text-lg">{project.name}</h3>
+              <p className="py-2 text-sm">{project.description}</p>
+            </article>
+          ))}
         </div>
       </section>
     </main>
